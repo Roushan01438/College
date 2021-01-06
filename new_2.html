@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main_container {
+            width:100%;
+            display:"flex";
+            flex-direction:"row-reverse";
+            margin-bottom:5px
+        }
+        .main_container:nth-child(odd) {
+            flex-direction:"row-reverse"
+        }
+        .card{
+            display:"flex";
+            flex:1;
+            flex-direction:"columnn";
+            width:100%;
+            height:300px;
+            background-color: black;
+            color:whitesmoke
+        }
+        .gap {
+             flex:1
+        }
+        .card img{
+          
+           width:100%;
+           height: 100%;
+           flex:4;
+        }
+        .card p {
+         flex:1;
+         width:100%
+    
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex;" class="main_container">
+        <div class="card" style="display: flex;flex-direction: column">
+            <img src="C:\Users\ASUS\Downloads\coading.jpg" alt=""/>
+            <p class="description">Hello</p>
+        </div>
+        <div class="gap"></div>
+    </div>
+    <div style="display: flex;flex-direction: row-reverse;" class="main_container">
+        <div class="card" style="display: flex;flex-direction: column" >
+            <img src="C:\Users\ASUS\Downloads\coading.jpg" alt=""/>
+            <p class="description">Hello</p>
+        </div>
+        <div class="gap"></div>
+    </div>
+    <div style="display: flex;" class="main_container">
+        <div class="card" style="display: flex;flex-direction: column">
+            <img src="C:\Users\ASUS\Downloads\coading.jpg" alt=""/>
+            <p class="description">Hello</p>
+        </div>
+        <div class="gap"></div>
+    </div>
+    <div style="display: flex;flex-direction: row-reverse;" class="main_container">
+        <div class="card" style="display: flex;flex-direction: column;" >
+            <img src="C:\Users\ASUS\Downloads\coading.jpg" alt=""/>
+            <p class="description">Hello</p>
+        </div>
+        <div class="gap"></div>
+    </div>
+</body>
+</html>
